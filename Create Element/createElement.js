@@ -4,10 +4,9 @@ function createElement(type, props, ...children) {
 
 const virtualDom = createElement(
   'div',
-  { id: 'app' },
-  createElement('h1', { class: 'title' }, 'Hello, World!'),
-  createElement('p', null, 'This is a simple virtual DOM example.'),
-  createElement('span', { style: 'color: red;' }, 'Enjoy coding!'),
+  { id: 'container' },
+  createElement('h2', null, 'Article Title'),
+  createElement('p', null, 'This is first paragraph.'),
 );
 
 console.log(virtualDom);
